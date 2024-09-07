@@ -1,0 +1,50 @@
+checking node version on window 
+window powershell -> node --version
+chrome Extension -> React developer tools -> it shows react components
+vs code extensions -> thunder client (postman alternative), eS7 react/redux/GraphQL native snippets - code shortcuts
+
+
+//------------react docs
+//use create react app folder structure to save time
+
+--------the above one is the npm package to install react
+npm install -g create-react-app --------is like purchasing someting
+
+---------------- npx it is like borrowing someting and return when done using
+npx create-react-app my-app 
+cd my-app
+npm start
+
+insted of this "npx create-react-app my-app" use "npx create-react-app folderName " --- whatever in the my-app will come outside
+
+components -  boilerplate
+props -> data 
+
+components + props = unique data
+
+//save all additional documents in SRC
+//get into the folder where all files are located and "npm start" ----------------important
+//dont delete anything in index.html file in public folder other than the comments ----important
+
+----------------initially------------
+Indix.html -- have div with id - root
+index.js - jha pe root id hai whan pe "app component" {app.js} daal do
+app.js == my whole site - initially
+
+? what is in function App() in app.js -- html wearing mask of js [JSX]
+jsx - return only one tag - className = app
+// if wanted to run react app on both laptop and on mobile == both devices must be connected with same wifi
+//send the IP address on mobile
+
+-----------------------JSX--------------------
+<h2>{variable name}</h2>
+`${}` variable inside string
+<div className="box1">text</div>
+<img scr={dfjdk} /> ---------------use closing tag in these
+
+Babel Compiles JSX down to react.createElement();
+
+//we don't upload node_modules files because user can download dependencies "npm install"
+
+
+

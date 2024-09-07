@@ -1,0 +1,45 @@
+while importing components from Bootstrap into app.js --- make sure put / in image, hr, br... etc tags
+replace class with className (ctrl + f)
+replace href="#" with href="/";
+
+
+--------------------Properties {props}
+Note -- if you are creating js and using import and export, make sure to write ext. as fileName.mjs {mjs = module type js}
+running - powershell -> node ./module.mjs
+
+//react functional component -- shortcut rfc
+//after typing rfc this will shows
+
+import React from 'react'
+
+export default function Navbar() {
+  return (
+    <div>Navbar</div>
+  )
+}
+
+---- then go back to app.js
+just write inside the body 
+<>
+  <Navbar></Navbar> -- this one
+</>
+
+magically the importing part will automatically will get done
+
+//now how to make navbar (bootstrap wala) make it resuable --- ?
+cut the navbar (bootstrap wala) from app.js and paste it into Navbar.js
+
+both folder should be in a same directory
+//props (data) should be readOnly
+
+------------------------------------------------converting props into object----------------------------------
+//first import Proptypes - shortcut (impt)
+import PropTypes from 'prop-types' 
+
+//in the very bottom of navbar.js
+//  functionName.PropTypes = {1stPropReceived, 2ndPropReceived}
+//it just make sure the variable type - strict
+Navbar.propTypes = {  ----------notice : p is small 
+  title : PropTypes.string,
+  aboutText : PropTypes.string
+}
